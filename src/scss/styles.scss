@@ -9,6 +9,13 @@ $gray-800: hsl(229, 31%, 21%);
 .btn-danger {
   background-color: $danger;
 }
+.btn-danger {
+  &:hover {
+    color: $danger;
+    border: 3px solid $danger;
+    background-color: #f1f2f3;
+  }
+}
 * {
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
@@ -16,6 +23,9 @@ $gray-800: hsl(229, 31%, 21%);
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+.bg-gray-dark {
+  background-color: $gray-800;
 }
 .gray-light {
   color: $gray-600;
@@ -30,12 +40,12 @@ $gray-800: hsl(229, 31%, 21%);
 }
 .custom-btn {
   background-color: $danger;
-  color: whitesmoke;
+  color: #f1f2f3;
   text-decoration: none;
   &:hover {
     color: $danger;
     border: 1px solid $danger;
-    background-color: whitesmoke;
+    background-color: #f1f2f3;
   }
 }
 .custom-item {
@@ -46,30 +56,21 @@ $gray-800: hsl(229, 31%, 21%);
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   border: none;
   margin: 0rem 1rem;
-  position: absolute;
-  z-index: -1;
-  overflow: hidden;
 }
 .custom-card:first-child {
-  top: 0px;
-  left: 20%;
-  // right: 60%;
+  margin-top: 0px;
 }
 .custom-card:nth-child(2) {
-  top: 20px;
-  left: 40%;
-  // right: 40%;
+  margin-top: 30px;
 }
 .custom-card:last-child {
-  top: 40px;
-  left: 60%;
-  // right: 20%;
+  margin-top: 60px;
 }
 @media (max-width: 445px) {
   .custom-btn {
     background: none;
     border: none;
-    color: $gray-800;
+    color: #f1f2f3;
   }
   .custom-item {
     width: 100%;
@@ -80,27 +81,27 @@ $gray-800: hsl(229, 31%, 21%);
   }
 }
 // #app-wrapper
-// .custom-bg::before {
-//   content: "";
-//   position: absolute;
-//   bottom: 0;
-//   right: -100px;
-//   width: 80%;
-//   height: 200px;
-//   border-radius: 150px 0px 0px 150px;
-//   background-color: $primary;
-//   z-index: -1;
-// }
-// @media (min-width: "445px") and (max-width: " 920px") {
-//   .custom-bg::before {
-//     content: "";
-//     position: absolute;
-//     bottom: 100px;
-//     right: -100px;
-//     width: 80%;
-//     height: 150px;
-//     border-radius: 150px 0px 0px 150px;
-//     background-color: $primary;
-//     z-index: -1;
-//   }
-// }
+.custom-bg::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -200px;
+  width: 80%;
+  height: 200px;
+  border-radius: 150px 0px 0px 150px;
+  background-color: $primary;
+  z-index: -1;
+}
+@media (min-width: "445px") and (max-width: " 920px") {
+  .custom-bg::before {
+    content: "";
+    position: absolute;
+    bottom: 100px;
+    right: -100px;
+    width: 80%;
+    height: 150px;
+    border-radius: 150px 0px 0px 150px;
+    background-color: $primary;
+    z-index: -1;
+  }
+}

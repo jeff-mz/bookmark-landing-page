@@ -15,8 +15,8 @@
 <body>
     <main id="app-wrapper" class="w-100 ">
         <!-- header -->
-        <header id="app-header">
-            <nav class="navbar navbar-expand-md py-4">
+        <header id="app-header" class="w-100">
+            <nav class="container navbar navbar-expand-md py-4">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img class="img-fluid" src="./public/images/logo-bookmark.svg" alt="logo-bookmark">
@@ -56,125 +56,117 @@
         </header>
 
         <!-- hero -->
-        <section class="d-flex flex-column-reverse flex-md-row justify-content-between" style="margin: 5rem 0rem;">
-            <div class="mt-5 custom-item">
-                <h1 class="fw-medium h1 text-center text-md-start display-5 ">A Simple Bookmark Manager</h1>
-                <p class="lead text-center  text-md-start">
-                    A clean and simple interface to organize your favourite websites. Open a new
-                    browser tab and see your sites load instantly. Try it for free.
-                </p>
-                <div class="text-center text-md-start">
-                    <button class="btn btn-primary rounded-1 me-3"> Get it on Chrome </button>
-                    <button class="btn btn-close-white bg-dark-subtle">Get it on Firefox</button>
+        <section class="w-100 mx-">
+            <div class="w-75 mx-auto d-flex flex-column-reverse flex-md-row justify-content-between "
+                style="margin: 5rem 0rem;">
+                <div class="mt-5 custom-item">
+                    <h1 class="fw-medium h1 text-center text-md-start display-5 ">A Simple Bookmark Manager</h1>
+                    <p class="lead text-center  text-md-start">
+                        A clean and simple interface to organize your favourite websites. Open a new
+                        browser tab and see your sites load instantly. Try it for free.
+                    </p>
+                    <div
+                        class="text-center text-md-start d-flex w-100 justify-content-between justify-content-md-start">
+                        <button class="btn btn-primary rounded-1 me-3 fs-6"> Get it on Chrome
+                        </button>
+                        <button class="btn btn-close-white bg-dark-subtle fs-6">Get it on Firefox</button>
+                    </div>
                 </div>
-            </div>
-            <div class="custom-bg custom-item  position-relative">
-                <img src="./public/images/illustration-hero.svg" alt="an illustration " class="img-fluid">
+                <div
+                    class="custom-bg custom-item  position-relative d-flex align-items-md-end align-items-center justify-content-end">
+                    <img src="./public/images/illustration-hero.svg" alt="an illustration " class="img-fluid">
+                </div>
             </div>
         </section>
 
         <!-- Features -->
-        <section class="row my-5">
-            <div class="col12">
-                <p class="display-5 text-center"> Features </p>
-                <p class=" text-center lead  mx-auto">
-                    Our aim is to make it quick and easy for you to access your favourite websites.
-                    Your bookmarks sync between your devices so you can access them on the go.
-                </p>
-            </div>
-            <!-- Tabs -->
-            <div class="col12">
-                <div class="container mt-3">
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs justify-content-center flex-column flex-md-row border border-bottom"
-                        role="tablist">
-                        <li class="nav-item border-0">
-                            <a class="nav-link border-0 active " data-bs-toggle="tab" href="#home">Simple
-                                Bookmarking</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link border-0" data-bs-toggle="tab" href="#menu1">Speedy Searching</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link border-0" data-bs-toggle="tab" href="#menu2">Easy Sharing</a>
-                        </li>
-                    </ul>
+        <section class="container my-5">
+            <div class="row">
+                <div class="col12">
+                    <p class="display-5 text-center"> Features </p>
+                    <p class=" text-center lead  mx-auto">
+                        Our aim is to make it quick and easy for you to access your favourite websites.
+                        Your bookmarks sync between your devices so you can access them on the go.
+                    </p>
+                </div>
+                <!-- Tabs -->
+                <div class="col12">
+                    <div class="container mt-3">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs justify-content-center flex-column flex-md-row border border-bottom"
+                            role="tablist">
+                            <li class="nav-item border-0">
+                                <a class="nav-link border-0 active " data-bs-toggle="tab" href="#home">Simple
+                                    Bookmarking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link border-0" data-bs-toggle="tab" href="#menu1">Speedy Searching</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link border-0" data-bs-toggle="tab" href="#menu2">Easy Sharing</a>
+                            </li>
+                        </ul>
 
-
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <!-- pane 1 -->
-                        <div id="home" class="container tab-pane active"><br>
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="./public/images/illustration-features-tab-1.svg" alt="tab one image"
-                                        class="img-fluid">
-                                </div>
-                                <div class="col-6">
-                                    <p class="lead">
-                                        Bookmark in one click
-
-                                        Organize your bookmarks however you like. Our simple drag-and-drop interface
-                                        gives you complete control over how you manage your favourite sites.
-
-                                        More Info
-                                    </p>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <!-- pane 1 -->
+                            <div id="home" class="container tab-pane active"><br>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <img src="./public/images/illustration-features-tab-1.svg" alt="tab one image"
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="col-12 col-md-6 my-5 my-md-0">
+                                        <h2 class="text-center h2 fw-bold">Bookmark in one click</h2>
+                                        <p class="lead text-center">
+                                            Organize your bookmarks however you like. Our simple drag-and-drop interface
+                                            gives you complete control over how you manage your favourite sites.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- pane 2 -->
-                        <div id="menu1" class="container tab-pane fade"><br>
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="./public/images/illustration-features-tab-2.svg" alt="tab one image"
-                                        class="img-fluid">
-                                </div>
-                                <div class="col-6">
-                                    <p class="lead">
-
-                                        Intelligent search
-
-                                        Our powerful search feature will help you find saved sites in no time at all.
-                                        No need to trawl through all of your bookmarks.
-
-                                        More Info
-                                    </p>
+                            <!-- pane 2 -->
+                            <div id="menu1" class="container tab-pane fade"><br>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <img src="./public/images/illustration-features-tab-2.svg" alt="tab one image"
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="col-12 col-md-6 my-5 my-md-0">
+                                        <h2 class="text-center h2 fw-bold">Intelligent search</h2>
+                                        <p class="lead">
+                                            Our powerful search feature will help you find saved sites in no time at
+                                            all.
+                                            No need to trawl through all of your bookmarks.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- pane3 -->
-                        <div id="menu2" class="container tab-pane fade"><br>
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="./public/images/illustration-features-tab-3.svg" alt="tab one image"
-                                        class="img-fluid">
-                                </div>
-                                <div class="col-6">
-                                    <p class="lead">
-
-                                        Share your bookmarks
-
-                                        Easily share your bookmarks and collections with others. Create a shareable
-                                        link that you can send at the click of a button.
-
-                                        More Info
-
-                                    </p>
+                            <!-- pane3 -->
+                            <div id="menu2" class="container tab-pane fade"><br>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <img src="./public/images/illustration-features-tab-3.svg" alt="tab one image"
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="col-12 col-md-6 my-5 my-md-0">
+                                        <h2 class="text-center h2 fw-bold">Share your bookmarks</h2>
+                                        <p class="lead">
+                                            Easily share your bookmarks and collections with others. Create a shareable
+                                            link that you can send at the click of a button.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
+                        </div>
+                        <!-- tab end -->
                     </div>
-                    <!-- tab end -->
                 </div>
             </div>
         </section>
-
-
-
-
 
         <!-- Download Section -->
         <section class="download text-center py-5 ">
@@ -182,8 +174,8 @@
                 <h2>Download the extension</h2>
                 <p class="lead">We've got more browsers in the pipeline. Please do let us know if you've got a favourite
                     you'd like us to prioritize.</p>
-                <div
-                    class="container d-flex justify-content-center align-items-center flex-column flex-md-row position-relative my-5">
+                <div class="container d-flex justify-content-center align-items-center flex-column flex-md-row my-5">
+                    <!-- card 1 -->
                     <div class="card custom-card">
                         <div class="card-body">
                             <img src="./public/images/logo-chrome.svg" alt="Chrome" class="mb-3">
@@ -192,6 +184,7 @@
                             <a href="#" class="btn btn-primary">Add & Install Extension</a>
                         </div>
                     </div>
+                    <!-- card 2 -->
                     <div class="card custom-card">
                         <div class="card-body">
                             <img src="./public/images/logo-firefox.svg" alt="Firefox" class="mb-3">
@@ -200,6 +193,7 @@
                             <a href="#" class="btn btn-primary">Add & Install Extension</a>
                         </div>
                     </div>
+                    <!-- card 3 -->
                     <div class="card custom-card">
                         <div class="card-body">
                             <img src="./public/images/logo-opera.svg" alt="Opera" class="mb-3">
@@ -210,7 +204,6 @@
                     </div>
                 </div>
             </div>
-            <div class="my-5 container d-none d-md-block" style="height: 200px;"></div>
         </section>
 
         <!-- FAQ Section -->
@@ -288,27 +281,50 @@
             </div>
         </section>
 
-
         <!-- Footer Section -->
-        <footer class="text-center py-4 w-100  text-white" style="background-color: #5368DF;">
+        <footer class="text-center pt-4 w-100  text-white" style="background-color: #5368DF;">
             <div class="container">
                 <p class="my-5" style="font-size: 12px ;letter-spacing: 5px;">35,000+ ALREADY JOINED</p>
                 <h5 class="h5 my-5 display-5">Stay up-to-date with what we're doing</h5>
-                <form class="mx-auto row w-75  justify-content-md-center">
-                    <input type="email" class="me-2 my-2 py-2 col-md-8 col-xl-6 border-0 rounded-1 col12"
+                <form class="mx-auto row w-75  justify-content-md-center my-5">
+                    <input required type="email" class="me-2 my-2 py-2 col-md-8 col-xl-6 border-0 rounded-1 col12"
                         placeholder="Enter your email address">
                     <button class="btn btn-danger col-md-3 col-12 my-2 col-xl-2">Contact Us</button>
                 </form>
             </div>
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-around bg-gray-dark py-3">
+                <a href="#" class="text-decoration-none">
+                    <img src="./public/images/untitled.svg" alt="logo-bookmark" class="img-fluid">
+                </a>
+                <ul class="nav d-flex flex-column flex-md-row ">
+                    <li><a href="#" class="nav-link px-2 text-white text-uppercase my-2 my-md-0">Features</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white text-uppercase my-2 my-md-0">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white text-uppercase my-2 my-md-0">Contact</a></li>
+                </ul>
+                <ul class="nav">
+                    <li>
+                        <img src="./public/images/icon-facebook.svg" alt="icon-facebook"
+                            class="nav-link img-fluid mx-3 my-2 my-md-0">
+                    </li>
+                    <li>
+                        <img src="./public/images/icon-twitter.svg" alt="icon-twitter"
+                            class="nav-link img-fluid  mx-3 my-2 my-md-0">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="text-center m-0 p-1" style="background-color: #5368DF;font-size: 12px ;">
+                <p class="text-dark m-0">
+                    Challenge by <a class="link-danger text-decoration-none"
+                        href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+                        Mentor</a>.
+                    Coded by <a class="link-danger text-decoration-none" href="https://github.com/jeff-mz"
+                        target="_blank">Jafar Mirzapoor </a>.
+                </p>
+            </div>
         </footer>
 
 
-        <footer class="container">
-            <p class="attribution">
-                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-                Coded by <a href="#">Your Name Here</a>.
-            </p>
-        </footer>
 
 
         <script type="module" src="./js/main.js"></script>
